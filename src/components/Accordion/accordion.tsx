@@ -76,7 +76,7 @@ export const BasicAccordion = ({ comics, events, stories, series }: {comics: { i
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <ThemeX>Eventos</ThemeX>
+              <ThemeX>Events</ThemeX>
             </AccordionSummary>
             <AccordionDetails>
             <ThemeX>
