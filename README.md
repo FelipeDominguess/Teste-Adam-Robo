@@ -2,11 +2,11 @@
 Primeiro é necessário configurar o nosso arquivo .env com as chaves da Marvel
 Link: (https://developer.marvel.com/account)
 
-MARVEL_API_BASE=https://gateway.marvel.com:443/v1
+REACT_APP_MARVEL_PRIVATE_KEY=https://gateway.marvel.com:443/v1
 
-MARVEL_PUBLIC_KEY = PUBLIC_KEY
+REACT_APP_MARVEL_PUBLIC_KEY = PUBLIC_KEY
 
-MARVEL_PRIVATE_KEY= PRIVATE_KEY
+REACT_APP_MARVEL_API_BASE= PRIVATE_KEY
 
 é necessário que siga as instrucões de hash de URL da Marvel com as suas chaves
 
