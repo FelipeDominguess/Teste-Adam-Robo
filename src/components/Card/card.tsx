@@ -16,7 +16,7 @@ import { openDB } from "../../utils/indexedDB";
 const Card = ({ id, name, description, thumbnail, comics, events, stories, series }: { id: number; name: string; description: string; thumbnail: { path: string; extension: string };comics: {items:[{name:string}]}; events: {items: [{name:string}]};stories: {items:[{name:string}]}; series: {items:[{name:string}]} }) => {
   const imageUrl = `${thumbnail.path}.${thumbnail.extension}`;
   const [modalOpen, setModalOpen] = useState(false);
-  const [isStarred, setIsStarred] = useState(false); // Novo estado
+  const [isStarred, setIsStarred] = useState(false); 
 
   const handleCardClick = () => {
     setModalOpen(true);

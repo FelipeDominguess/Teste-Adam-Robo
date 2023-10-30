@@ -30,7 +30,7 @@ export const SearchInput = styled.input`
   height: 30px;
   border: 1px solid grey;
   border-radius: 5px;
-  padding: 5px; /* Add some padding for better spacing */
+  padding: 5px;
 `;
 
 export const SearchButton = styled.button`

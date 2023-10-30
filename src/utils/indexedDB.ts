@@ -16,7 +16,6 @@ export const openDB = (): Promise<IDBDatabase> => {
     };
 
     request.onupgradeneeded = (event) => {
-      console.log('Criando object store favoritos')
       db = (event.target as IDBOpenDBRequest).result;
       
       

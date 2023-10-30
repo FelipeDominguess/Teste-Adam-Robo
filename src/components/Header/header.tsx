@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Logo from '../../assents/download.png'
 import SearchIcon from '@mui/icons-material/Search';
-import { useQueryClient } from 'react-query';
 import { HeaderContainer, ImgLogo, Form, Label, SearchInput, SearchButton } from './headerStyle';
 
 

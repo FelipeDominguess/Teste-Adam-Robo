@@ -21,7 +21,7 @@ const hash = md5(time + privateKey + publicKey)
 const Modal = ({ id, name, description, thumbnail, closeModal, comics, events, stories, series }: { id: number; name: string; description: string; thumbnail: { path: string; extension: string }; comics: { items: [{ name: string }] }; events: { items: [{ name: string }] }; stories: { items: [{name: string}]};series: {items:[{name: string}]} ;closeModal: () => void }) => {
     const imageUrl = `${thumbnail.path}.${thumbnail.extension}`;
     const [isStarred, setIsStarred] = useState(false);
-    const [movies, setMovies] = useState<{ id: number; name: string; description: string; thumbnail: { path: string; extension: string; }; comics: { items: string }; events: {items: string} }[]>([]);
+    const [character, setCharacter] = useState<{ id: number; name: string; description: string; thumbnail: { path: string; extension: string; }; comics: { items: string }; events: {items: string} }[]>([]);
 
 
 
@@ -42,7 +42,7 @@ const Modal = ({ id, name, description, thumbnail, closeModal, comics, events, s
                 `${apibase}ts=${time}&apikey=${publicKey}&hash=${hash}`
             );
             console.log('Dados da resposta:', response.data.data.results);
-            setMovies(response.data.data.results);
+            setCharacter(response.data.data.results);
         };
 
         fetchData();
