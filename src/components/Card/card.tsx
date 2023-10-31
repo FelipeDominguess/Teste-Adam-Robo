@@ -23,7 +23,7 @@ const Card = ({
   events,
   stories,
   series,
-  closeModal
+  closeModal,
 }: InfoProps) => {
   const imageUrl = `${thumbnail.path}.${thumbnail.extension}`;
   const [modalOpen, setModalOpen] = useState(false);
@@ -32,12 +32,12 @@ const Card = ({
   useEffect(() => {
     openDB()
       .then((db) => {
-        const transaction = db.transaction(["favoritos"], "readonly"); // Agora estamos abrindo uma transação somente para leitura.
+        const transaction = db.transaction(["favoritos"], "readonly");
         const store = transaction.objectStore("favoritos");
         const request = store.get(id);
 
         request.onsuccess = function () {
-          setIsStarred(!!request.result); // Atualiza o estado isStarred com base na presença do item no banco de dados.
+          setIsStarred(!!request.result);
         };
       })
       .catch((error) => {
@@ -49,7 +49,7 @@ const Card = ({
     setModalOpen(true);
   };
 
-  const handleCloseModal  = () => {
+  const handleCloseModal = () => {
     setModalOpen(false);
   };
   function toggleStar() {
@@ -125,7 +125,7 @@ const Card = ({
           name={name}
           description={description}
           thumbnail={thumbnail}
-          closeModal={handleCloseModal }
+          closeModal={handleCloseModal}
           comics={comics}
           events={events}
           series={series}

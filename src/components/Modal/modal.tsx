@@ -36,20 +36,9 @@ const Modal = ({
   const imageUrl = `${thumbnail.path}.${thumbnail.extension}`;
   const [searchTerm, setSearchTerm] = useState("");
   const { data, isLoading } = useQuery("characters", () =>
-  getCharacter(searchTerm)
-);
-const { getCharacter } = useReactQuery();
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const response = await axios.get(
-  //       `${apibase}ts=${time}&apikey=${publicKey}&hash=${hash}`
-  //     );
-  //     console.log("Dados da resposta:", response.data.data.results);
-  //     setCharacter(response.data.data.results);
-  //   };
-
-  //   fetchData();
-  // }, []);
+    getCharacter(searchTerm)
+  );
+  const { getCharacter } = useReactQuery();
 
   return (
     <ModalDiv>

@@ -29,8 +29,6 @@ export const useReactQuery = () => {
   return { getCharacter };
 };
 
-
-
 export const ReactQueryProvider = ({ children }: { children: ReactNode }) => {
   const queryClient = new QueryClient();
 

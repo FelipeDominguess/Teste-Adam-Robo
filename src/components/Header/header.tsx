@@ -1,8 +1,5 @@
-import axios from "axios";
-import md5 from "md5";
 import React, { useState } from "react";
-import styled from "styled-components";
-import Logo from "../../assents/download.png";
+import Logo from "../../assets/download.png";
 import SearchIcon from "@mui/icons-material/Search";
 import {
   HeaderContainer,

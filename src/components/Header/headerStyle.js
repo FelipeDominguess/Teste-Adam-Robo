@@ -1,16 +1,15 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
- display: flex;
-    align-items: center;
-    background-color: #f8f8f8;
-    width: 97%;
-    gap: 19px;
-    min-width: 190px;
-    margin-top: 10px;
-    margin-left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  width: 97%;
+  gap: 19px;
+  min-width: 190px;
+  margin-top: 10px;
+  margin-left: 10px;
 `;
-
 
 export const Form = styled.form`
   display: flex;
@@ -21,8 +20,7 @@ export const Form = styled.form`
 
 export const Label = styled.label`
   width: 100%;
-
-`
+`;
 
 export const SearchInput = styled.input`
   width: 100%;
@@ -47,4 +45,4 @@ export const SearchButton = styled.button`
 export const ImgLogo = styled.img`
   width: 40px;
   height: 40px;
-`
+`;

@@ -7,14 +7,13 @@ export const ListContainer = styled.div`
 `;
 
 export const ItemContainer = styled.div`
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
 `;
 
 export const InfoContainer = styled.div`
@@ -27,7 +26,6 @@ export const TitleCartCard = styled.h2`
   color: white;
 `;
 
-
 export const Button = styled.button`
   padding: 10px 20px;
   background-color: #007bff;
@@ -37,26 +35,23 @@ export const Button = styled.button`
 `;
 
 export const ThumbnailImage = styled.img`
-width: 250px;
-
-`
+  width: 250px;
+`;
 
 export const FigureImg = styled.figure`
-background: #e62429;
-    padding: 0;
-    width: 250px;
-   
-`
+  background: #e62429;
+  padding: 0;
+  width: 250px;
+`;
 
 export const NameDiv = styled.div`
-    padding: 16px 10px 17px;
-    background: #151515;
-    color: #e62429;
-    transition: color .3s;
-    position: relative;
-    line-height: 1;
-    width: 100%;
-    max-width: 250px;
-    clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0);
-
-`
+  padding: 16px 10px 17px;
+  background: #151515;
+  color: #e62429;
+  transition: color 0.3s;
+  position: relative;
+  line-height: 1;
+  width: 100%;
+  max-width: 250px;
+  clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 0);
+`;
