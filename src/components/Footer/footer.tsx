@@ -1,6 +1,6 @@
-import { List } from '@mui/material';
-import React from 'react';
-import { FooterContainer, Column, Heading, SocialIcons } from './footerstyle';
+import { List } from "@mui/material";
+import React from "react";
+import { FooterContainer, Column, Heading, SocialIcons } from "./footerstyle";
 
 const Footer = () => {
   return (
@@ -30,6 +30,6 @@ const Footer = () => {
       </Column>
     </FooterContainer>
   );
-}
+};
 
 export default Footer;

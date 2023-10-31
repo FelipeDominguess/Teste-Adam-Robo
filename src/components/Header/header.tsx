@@ -1,15 +1,20 @@
-import axios from 'axios';
-import md5 from 'md5';
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import Logo from '../../assents/download.png'
-import SearchIcon from '@mui/icons-material/Search';
-import { HeaderContainer, ImgLogo, Form, Label, SearchInput, SearchButton } from './headerStyle';
-
-
+import axios from "axios";
+import md5 from "md5";
+import React, { useState } from "react";
+import styled from "styled-components";
+import Logo from "../../assents/download.png";
+import SearchIcon from "@mui/icons-material/Search";
+import {
+  HeaderContainer,
+  ImgLogo,
+  Form,
+  Label,
+  SearchInput,
+  SearchButton,
+} from "./headerStyle";
 
 const Header = ({ setSearchTerm }: any) => {
-  const [localSearchTerm, setLocalSearchTerm] = useState('');
+  const [localSearchTerm, setLocalSearchTerm] = useState("");
 
   const handleSearch = (e: any) => {
     e.preventDefault();
@@ -18,7 +23,7 @@ const Header = ({ setSearchTerm }: any) => {
 
   return (
     <HeaderContainer>
-    <ImgLogo src={Logo}/>
+      <ImgLogo src={Logo} />
 
       <Form onSubmit={handleSearch}>
         <Label>
@@ -29,7 +34,9 @@ const Header = ({ setSearchTerm }: any) => {
             onChange={(e) => setLocalSearchTerm(e.target.value)}
           />
         </Label>
-        <SearchButton type="submit"><SearchIcon/></SearchButton>
+        <SearchButton type="submit">
+          <SearchIcon />
+        </SearchButton>
       </Form>
     </HeaderContainer>
   );

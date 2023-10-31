@@ -9,7 +9,7 @@ export const AppContainer = styled.div`
   background-color: white;
   flex-direction: column;
   align-content: stretch;
-  
+
   @media screen and (min-width: 768px) {
     justify-content: space-around;
     display: flex;

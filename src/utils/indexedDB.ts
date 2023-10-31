@@ -1,5 +1,5 @@
-const dbName = 'meu-db';
-const dbVersion = 2; 
+const dbName = "meu-db";
+const dbVersion = 2;
 let db: IDBDatabase;
 
 export const openDB = (): Promise<IDBDatabase> => {
@@ -17,13 +17,11 @@ export const openDB = (): Promise<IDBDatabase> => {
 
     request.onupgradeneeded = (event) => {
       db = (event.target as IDBOpenDBRequest).result;
-      
-      
-      if (!db.objectStoreNames.contains('favoritos')) {
-        const store = db.createObjectStore('favoritos', { keyPath: 'id' });
-        store.createIndex('id', 'id', { unique: true });
+
+      if (!db.objectStoreNames.contains("favoritos")) {
+        const store = db.createObjectStore("favoritos", { keyPath: "id" });
+        store.createIndex("id", "id", { unique: true });
       }
     };
   });
-  
 };
